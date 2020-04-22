@@ -1,0 +1,296 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #3a5eca;
+  font-family: 'Baloo Paaji 2', cursive;
+  color: #868686;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  color: #5b5b5b;
+}
+h1 {
+  font-size: 1.6em;
+  text-align: center;
+  padding: 25px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 2.3em;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.main-nav {
+  margin-top: 25px;
+  font-size: 1.3em;
+}
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 25px;
+}
+
+.main-nav li {
+  margin: 5px;
+}
+
+.main-nav a {
+  font-size: 1.2em;
+  color: black;
+  text-transform: uppercase;
+  padding: 12px;
+  margin: 5px;
+  background: white;
+}
+
+.name a {
+  color: black;
+}
+
+.main-nav a:hover {
+  color: #e7e7e7;
+}
+
+/* ---- Banner ---- */
+
+.banner {
+  text-align: center;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.logo {
+  width: 75%;
+}
+
+.col {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+/* ---- Navigation ---- */
+
+.primary {
+  background: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 25px;
+}
+
+.contact li {
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.contact a {
+  color: #5b5b5b;
+}
+
+.contact a:hover {
+  color: #e7e7e7;
+}
+
+.phone::before {
+  content: "Phone";
+  padding: 10px;
+  margin: 10px;
+}
+
+.email::before {
+  content: "Email";
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+/* ---- Footer ---- */
+
+.secondary-footer {
+  display: inherit;
+}
+
+.student {
+  float: left;
+  padding-left: 15px;
+}
+
+.top {
+  list-style: none;
+  float: right;
+}
+
+.top li {
+  color: #868686;
+  font-size: 1.2em;
+  float: left;
+  padding: 10px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.student a,
+.top a {
+  color: #868686;
+}
+
+.main-footer {
+  display: none;
+}
+
+
+/* =============================
+  Media query for 769px screens
+  ============================== */
+@media screen and (min-width: 769px) {
+
+  .main-header {
+    width: 100%;
+    top: 0;
+    text-align: center;
+  }
+
+  .main-nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav a {
+    background: none;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .banner {
+    padding: 0;
+    margin: 30px;
+  }
+
+  .portfolio-info {
+    text-align: left;
+  }
+
+  .logo {
+    width: 35%;
+    float: right;
+    padding-left: 10px;
+  }
+/* ---- Floats ---- */
+
+  .content {
+    float: left;
+    width: 47%;
+    padding: 10px;
+  }
+
+/* ---- Navigation for bigger scree ---- */
+
+  .main-footer {
+    display: inherit;
+    padding: 10px 5%;
+  }
+
+  .name-2 {
+    float: left;
+  }
+
+  .nav-2 {
+    list-style: none;
+    float: right;
+  }
+
+  .nav-2 li {
+    color: #868686;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  .nav-2 a,
+  .name-2 a {
+    color: #868686;
+  }
+
+  .secondary-footer {
+    display: none;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+}
+
+/* =============================
+  Media query for 1025px screens
+  ============================== */
+@media screen and (min-width: 1025px) {
+
+  .name {
+    float: left;
+    margin: 0 auto;
+    padding: 0
+  }
+
+  .content {
+    float: left;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .main-head li {
+    margin: 0 auto;
+  }
+
+  .secondary-footer {
+    display: none;
+  }
+}
