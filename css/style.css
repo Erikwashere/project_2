@@ -184,7 +184,7 @@ ul {
 /* =============================
   Media query for 769px screens
   ============================== */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
   .main-header {
     width: 100%;
@@ -208,6 +208,10 @@ ul {
   .banner {
     padding: 0;
     margin: 30px;
+  }
+
+  .content {
+    margin: 0 1%;
   }
 
   .portfolio-info {
@@ -272,7 +276,7 @@ ul {
 /* =============================
   Media query for 1025px screens
   ============================== */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
   .name {
     float: left;
@@ -284,6 +288,7 @@ ul {
     float: left;
     width: 30%;
     padding: 10px;
+    margin: 0 1%;
   }
 
   .main-head li {
